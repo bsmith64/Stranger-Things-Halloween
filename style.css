@@ -86,3 +86,13 @@ div#slide-4 {
   .active .wrapper p {
     letter-spacing: 3px !important;
     opacity: 1 !important; }
+
+@media (max-width: 40em) {
+  div.div-block {
+    background-position: 100% !important; }
+    div.div-block .wrapper p {
+      font-size: 22px;
+      font-weight: 600; }
+
+  .active .wrapper .p {
+    letter-spacing: 0.5px !important; } }

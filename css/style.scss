@@ -124,3 +124,31 @@ div#slide-4 {
 }
 
 
+@media (max-width: 40em) {
+	div.div-block {
+		background-position:100% !important;
+
+		.wrapper {
+			p {
+				font-size: 22px;
+				font-weight:600;
+			}
+		}
+	}
+
+	.active {
+		.wrapper {
+			.p {
+				letter-spacing:0.5px !important;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
