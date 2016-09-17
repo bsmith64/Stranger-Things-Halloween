@@ -59,7 +59,11 @@ div#slide-4 {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  cursor: pointer !important; }
+  cursor: pointer !important;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out; }
   #rsvp a {
     text-decoration: none; }
   #rsvp p {
@@ -92,4 +96,7 @@ div#slide-4 {
     background-position: 100% !important; }
     div.div-block .wrapper p {
       font-size: 22px;
-      font-weight: 600; } }
+      font-weight: 600; }
+
+  #rsvp p {
+    font-size: 18px; } }
