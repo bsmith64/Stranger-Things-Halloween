@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>A Stranger Night Party</title>
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto:900" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+<link rel='shortcut icon' href='st-fav.png' type='image/x-icon'/ >
+
+</head>
+<body>
+
+
+<div class="body-slider">
+
+	<div id="slide-1" class="div-block">
+		<div class="wrapper">
+			<p>JOIN US FOR A STRANGE NIGHT <br /> IN THE UPSIDE DOWN</p>
+		</div>
+	</div>
+
+	<div id="slide-2" class="div-block">
+		<div class="wrapper">
+			<p>HOSTED BY <br /> JAE AND BLAKE</p>
+		</div>
+	</div>
+
+	<div id="slide-3" class="div-block">
+		<div class="wrapper">
+			<p>Saturday, October 29th</p>
+		</div>
+	</div>
+
+	<div id="slide-4" class="div-block">
+		<div class="wrapper">
+			<p>8:00PM</p>
+		</div>
+	</div>
+
+</div>
+
+<div id="rsvp">
+	<a href="mailto:jaelauren@gmail.com "><p>RSVP</p></a>
+</div>
+
+<div class-"song">
+	<audio loop autoplay style="display:none;">
+<!-- 	  <source src="horse.ogg" type="audio/ogg"> -->
+	  <source src="ST-Audio.mp4" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script type="text/javascript">
+
+jQuery(document).ready(function($) {
+
+	
+	var started = false;
+	var slides = document.getElementsByClassName('div-block');
+	var counter = 1
+
+
+	if (started === false) {
+		console.log('started: ' + started);
+		document.getElementById('slide-1').className += ' active active-grow';
+	}
+
+	function rc() {
+		console.log(counter);
+	}
+
+	// if (counter === 1 && started) {
+	// 	$(document).('.active-grow').removeClass('active-grow');
+	// }
+
+	function fader() {
+		var tick = setInterval(function() {
+			started = true;
+			console.log(slides[counter]);
+
+			var f =	$('.active');
+			f.removeClass('active');
+
+			setTimeout(function() {
+				$('.div-block').not('.active').removeClass('active-grow');
+			},2000);
+
+			slides[counter].className += ' active active-grow';
+			counter++;
+
+			if (counter === slides.length) {
+				clearInterval(tick);
+
+				counter = 0;
+
+				setTimeout(function() {
+					document.getElementById("rsvp").className += 'rsvp-show';
+				},3000);
+
+				fader();
+			}
+
+			rc();
+
+		}, 6000);
+	}
+
+	fader();
+
+
+
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
