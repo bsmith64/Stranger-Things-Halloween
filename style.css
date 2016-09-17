@@ -110,8 +110,8 @@ div#slide-4 {
   div.div-block {
     background-position: 100% !important; }
     div.div-block .wrapper p {
-      font-size: 22px;
-      font-weight: 600; }
+      font-size: 22px !important;
+      font-weight: 600 !important; }
 
   #rsvp p {
     font-size: 18px; } }
