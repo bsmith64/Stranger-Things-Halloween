@@ -57,7 +57,7 @@ div#slide-4 {
 #rsvp {
   opacity: 0;
   position: fixed;
-  bottom: 10px;
+  bottom: 30px;
   right: 30px;
   cursor: pointer !important; }
   #rsvp a {
@@ -65,8 +65,9 @@ div#slide-4 {
   #rsvp p {
     color: #ffffff;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 0.5px;
+    margin: 0;
     opacity: 0.8;
     -webkit-transition: opacity 2s ease-in-out;
     -moz-transition: opacity 2s ease-in-out;
@@ -79,12 +80,11 @@ div#slide-4 {
   opacity: 1 !important; }
 
 .active-grow {
-  transform: scale(1.2) !important; }
+  transform: scale(1.4) !important; }
 
 .active {
   opacity: 1 !important; }
   .active .wrapper p {
-    letter-spacing: 3px !important;
     opacity: 1 !important; }
 
 @media (max-width: 40em) {
@@ -92,7 +92,4 @@ div#slide-4 {
     background-position: 100% !important; }
     div.div-block .wrapper p {
       font-size: 22px;
-      font-weight: 600; }
-
-  .active .wrapper .p {
-    letter-spacing: 0.5px !important; } }
+      font-weight: 600; } }
