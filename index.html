@@ -43,9 +43,9 @@
 
 </div>
 
-<div id="rsvp">
+<!-- <div id="rsvp">
 	<a href="registration.html"><p>RSVP</p></a>
-</div>
+</div> -->
 
 <div class-"song">
 	<audio loop autoplay style="display:none;">
@@ -87,9 +87,9 @@ jQuery(document).ready(function($) {
 			if (counter === slides.length) {
 				clearInterval(tick);
 				counter = 0;
-				setTimeout(function() {
-					document.getElementById("rsvp").className += ' rsvp-show';
-				},3000);
+				// setTimeout(function() {
+				// 	document.getElementById("rsvp").className += ' rsvp-show';
+				// },3000);
 				fader();
 			}
 		}, 6000);
