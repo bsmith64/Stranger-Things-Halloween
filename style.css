@@ -31,6 +31,8 @@ div.body-slider {
     div.body-slider div.div-block .wrapper {
       text-align: center;
       position: absolute;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       top: 50%;
       left: 50%; }
@@ -86,6 +88,24 @@ div#slide-4 {
     transition: opacity 2s ease-in-out; }
     #rsvp p:hover {
       opacity: 1; }
+
+.registration {
+  background-color: #000000; }
+  .registration .registration-wrapper h1 {
+    color: #ffffff;
+    text-align: center; }
+  .registration .registration-wrapper p {
+    color: #ffffff;
+    text-align: center; }
+
+#particles {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
 .rsvp-show {
   opacity: 1 !important; }
